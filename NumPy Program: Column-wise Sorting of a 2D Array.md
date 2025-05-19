@@ -14,15 +14,14 @@ To write a **NumPy** program that sorts the elements in each column of a given 2
 ##  Program
 ~~~
 import numpy as np
-x=np.array(eval(input()))
-sorted=np.sort(x,axis=1)
-print("Given array ")
-print("",x,"\n")
-print(sorted)
+a=np.array(eval(input()))
+print("Given array")
+print(end=" ")
+print(a)
+print()
+print(np.sort(a,axis=0))
 ~~~
 ## Output
-![439322848-fe2b0019-a533-4b1d-8e6b-1465ca52b498](https://github.com/user-attachments/assets/5192c83d-39dd-4ebd-a013-5c82baa81802)
-
-
+![438779659-0bb1a25d-de78-4516-8855-7cbed7d75735](https://github.com/user-attachments/assets/f398ba56-ee88-4269-96f5-905149fecf93)
 ## Result
-The program successfully converts a 1-D array into a 2-D array with 3 rows and displays it.
+Thus the python program for sorting each column in numpy has been implemented and executed successfully.
