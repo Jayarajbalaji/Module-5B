@@ -14,17 +14,15 @@ To write a **NumPy** program that sorts the elements in each column of a given 2
 ##  Program
 ~~~
 import numpy as np
-l=eval(input())
-print("The original array:")
-arr=np.array(l)
-
-print(f" {arr}")
-print("\n3 x 3 Array:")
-new=arr.reshape(3,3)
-print(f" {new}")
+x=np.array(eval(input()))
+sorted=np.sort(x,axis=1)
+print("Given array ")
+print("",x,"\n")
+print(sorted)
 ~~~
 ## Output
-![438749336-768e3cd3-b615-4bc5-b7d3-b0dedb26af6c](https://github.com/user-attachments/assets/4e27f069-9336-4e2f-b921-825f17d195d0)
+![439322848-fe2b0019-a533-4b1d-8e6b-1465ca52b498](https://github.com/user-attachments/assets/5192c83d-39dd-4ebd-a013-5c82baa81802)
+
 
 ## Result
 The program successfully converts a 1-D array into a 2-D array with 3 rows and displays it.
