@@ -15,13 +15,15 @@ To write a Python program using **NumPy** that finds the indices where elements 
 ##  Program
 ~~~
 import numpy as np
-a=list(map(int,input().split()))
-arr=np.array(a)
-new=arr.reshape((3,3))
-print(new)
+x=eval(input())
+y=eval(input())
+l1=np.array(x)
+l2=np.array(y)
+
+print(np.where(l1>l2))
+print(np.where(l1==l2))
 ~~~
 ## Output
-![438750455-c4931f77-d694-4eaf-a1ef-0a03813add20](https://github.com/user-attachments/assets/9051f0cd-4a03-42b0-8292-197765653422)
-
+![438782359-5bb4e29b-f3ad-45f9-bea7-3c754408a985](https://github.com/user-attachments/assets/ba27ef43-28da-4c5c-8ff6-8de45454bd80)
 ## Result
-The program successfully takes a list of 9 integers and converts it into a 3×3 NumPy array.
+Thus the python program for element wise comparison between two numpy array has been implemented and executed successfully
